@@ -1,0 +1,19 @@
+1.  <stdint.h> is a header to declare sets of integer types having specified widths.
+2.  unit8_t, unit16_t and unit32_t denotes an unsigned integer type with a width of exactly 8, 16 and 32 bits respectively.
+    int32_t denotes signed inteher type with a width of exactly 32 bits.
+3.  BYTE = 1 byte (8 bits)
+    DWORD = 4 bytes (32 bits)
+    LONG = 4 bytes (32 bits)
+    WORD = 2 bytes (16 bits)
+4.  In ASCII, the first two bytes are the characters BM.
+    In decimal, 16973
+    In Hexadecimal, 0x424d
+5.  bfsize specifies the size of whole bitmap file.
+    bisize specifies the size of a BITMAPINFOHEADER structure.
+6.  If biHeight is negative, the bitmap has its rows stored in top-down order with the origin at upper left corner.
+7.  biBitCount
+8.  If there is no free space in the file system or user does not authorize to create a file or if it can't find the file.
+9.  The third argument of fread specifies number of reads from a stream and we need only one read of a structure at a time.
+10. It specifies 3 bytes of padding
+11. It moves to a specific location in a file
+12. SEEK_CUR is an argument to fseek(). It means seek from the current location.
