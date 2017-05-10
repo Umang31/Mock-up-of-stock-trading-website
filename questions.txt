@@ -1,0 +1,17 @@
+0.  It is maximum length of a word in a dictionary which is 45.
+1.  It reports resource usage totals.
+2.  There are 16 members in a variable of type struct rusage.
+3.  Because passing large structs by value is slow and takes up lot of memory. 
+    If we pass or return by value then copies will get placed on stack, which might even cause stack to overflow.
+4.  After loading text file and dictionary, main() starts to spell check each word in text.
+    It starts from file pointer and goes on till it reaches end of file (EOF).
+    If condition then checks for charatcers with a goal of constructing a word and also checks if the word is within the specified length.
+    Else-if condition then checks if there are numbers in the words and ignores them if it finds one.
+    Another else-if condition counts the number of words and checks for their spelling.
+    If there are any mispelled words, it prints them and checks for next word.
+5.  fscanf with a format string like "%s" will read subsequent characters until a whitespace is found.
+    Because words within the text files sometimes end with punctuation, fscanf will view them as being part of the word 
+    and complicate the reading procedure.
+    In addition, if a longer string was read using fscanf (i.e. larger than 45) we could overwrite important data in memory 
+    or cause a segmentation fault.
+6.  To prevent them from any kind of changes in the program. i.e. word and dicionary
